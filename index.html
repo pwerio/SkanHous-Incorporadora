@@ -598,12 +598,95 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 col-md-offset-1">
-              <div class="dots-image">
-                <img alt="" class="about-img img-responsive" src="images/1-470x660.jpg">
-                <div class="dots"></div>
-              </div>
-            </div>
+<!-- CSS -->
+<style>
+  .dots-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dots-image img {
+    width: 100%;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Play_button_icon_%28black%29.png') no-repeat center center;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .play-button:hover {
+    opacity: 0.8;
+  }
+
+  /* Popup video style */
+  #videoPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #videoPopup video {
+    width: 80%;
+    max-width: 800px;
+  }
+
+  #closePopup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- HTML -->
+<div class="col-md-5 col-md-offset-1">
+  <div class="dots-image">
+    <img alt="" class="about-img img-responsive" src="images/1-470x660.jpg">
+    <button class="play-button" onclick="openVideo()"></button>
+    <div class="dots"></div>
+  </div>
+</div>
+
+<!-- Popup Video HTML -->
+<div id="videoPopup">
+  <button id="closePopup" onclick="closeVideo()">X</button>
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function openVideo() {
+    document.getElementById('videoPopup').style.display = 'flex';
+  }
+
+  function closeVideo() {
+    document.getElementById('videoPopup').style.display = 'none';
+  }
+</script>
+
           </div>
         </div>
       </section>
