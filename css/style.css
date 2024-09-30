@@ -1363,7 +1363,7 @@ a.brand:focus{
 }
 
 .project-item:hover .project-hover{
-  background-color: rgba(206,224,2,0.85);
+  background-color: #ffce04;
 }
 
 .project-item:hover .project-hover .project-title{
