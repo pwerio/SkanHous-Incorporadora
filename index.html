@@ -1349,7 +1349,7 @@
                 <div class="col-md-3">
                   <div class="section-info">
                     <div class="title-hr wow fadeInLeft"></div>
-                    <div class="info-title">Nos envie uma mensagem</div>
+                    <div class="info-title">Nos envie uma mensagem no WhatsApp</div>
                   </div>
                 </div>
                 <div class="col-md-9">
@@ -1362,7 +1362,15 @@
                         <input class="input-gray" type="email" name="email" id="email" required placeholder="Email*">
                       </div>
                       <div class="form-group col-sm-12 col-lg-4">
-                        <input class="input-gray" type="text" name="subject" id="subject" required placeholder="Subject*">
+                        <!-- Campo de Assunto transformado em dropdown -->
+                        <select class="input-gray" name="subject" id="subject" required>
+                          <option value="" disabled selected>Escolha um assunto*</option>
+                          <option value="Contato Comercial">Contato Comercial</option>
+                          <option value="Parcerias">Parcerias</option>
+                          <option value="Fornecedor">Fornecedor</option>
+                          <option value="Recursos Humanos">Recursos Humanos</option>
+                          <option value="Outro">Outro</option>
+                        </select>
                       </div>
                       <div class="form-group col-sm-12">
                         <textarea class="input-gray" name="message" id="message" required placeholder="Message*"></textarea>
@@ -1372,7 +1380,7 @@
                       </div>
                     </div>
                     <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you! Your message has been successfully sent...</div>
-                    <div class="error-message">We're sorry, but something went wrong</div>
+                    <div class="error-message">Obrigado pelo envio da sua Mensagem. </div>
                   </form>
                 </div>
                 
