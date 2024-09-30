@@ -1353,26 +1353,57 @@
                   </div>
                 </div>
                 <div class="col-md-9">
-                  <form class="js-form">
+                  <form class="js-form" id="whatsappForm">
                     <div class="row">
                       <div class="form-group col-sm-6 col-lg-4">
-                        <input class="input-gray" type="text" name="name" required placeholder="Name*">
+                        <input class="input-gray" type="text" name="name" id="name" required placeholder="Name*">
                       </div>
                       <div class="form-group col-sm-6 col-lg-4">
-                        <input class="input-gray" type="email" name="email" placeholder="Email">
+                        <input class="input-gray" type="email" name="email" id="email" placeholder="Email">
                       </div>
                       <div class="form-group col-sm-12 col-lg-4">
-                        <input class="input-gray" type="text" name="subject" placeholder="Subject (Optinal)">
+                        <input class="input-gray" type="text" name="subject" id="subject" placeholder="Subject (Optional)">
                       </div>
                       <div class="form-group col-sm-12">
-                        <textarea class="input-gray" name="message"  required  placeholder="Message*"></textarea>
+                        <textarea class="input-gray" name="message" id="message" required placeholder="Message*"></textarea>
                       </div>
-                      <div class="col-sm-12"><button type="submit" class="btn-upper btn-yellow btn">Send Message</button></div>
+                      <div class="col-sm-12">
+                        <button type="submit" class="btn-upper btn-yellow btn">Send Message</button>
+                      </div>
                     </div>
-                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
+                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you! Your message has been successfully sent...</div>
                     <div class="error-message">We're sorry, but something went wrong</div>
                   </form>
                 </div>
+                
+                <script>
+                  document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                
+                    // Obtendo os valores do formulário
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                
+                    // Criando a mensagem para o WhatsApp
+                    let whatsappMessage = `Olá, meu nome é ${name}.`;
+                    if (email) {
+                      whatsappMessage += ` Meu email é: ${email}.`;
+                    }
+                    if (subject) {
+                      whatsappMessage += ` Assunto: ${subject}.`;
+                    }
+                    whatsappMessage += ` Mensagem: ${message}`;
+                
+                    // Codificando a mensagem para a URL
+                    const whatsappUrl = `https://wa.me/5511991001961?text=${encodeURIComponent(whatsappMessage)}`;
+                
+                    // Redirecionando o usuário para o WhatsApp
+                    window.open(whatsappUrl, '_blank');
+                  });
+                </script>
+                
               </div>
             </div>
           </section>
