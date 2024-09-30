@@ -1386,6 +1386,19 @@
                     const subject = document.getElementById('subject').value;
                     const message = document.getElementById('message').value;
                 
+                    // Verificação do nome (mais de 4 letras)
+                    if (name.length <= 4) {
+                      alert("O nome deve ter mais de 4 letras.");
+                      return;
+                    }
+                
+                    // Verificação do e-mail (formato válido)
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(email)) {
+                      alert("Por favor, insira um e-mail válido.");
+                      return;
+                    }
+                
                     // Verifica se todos os campos estão preenchidos
                     if (!name || !email || !subject || !message) {
                       alert("Por favor, preencha todos os campos.");
@@ -1404,8 +1417,7 @@
                     // Redirecionando o usuário para o WhatsApp
                     window.open(whatsappUrl, '_blank');
                   });
-                </script>
-                
+                </script>                
                 
               </div>
             </div>
