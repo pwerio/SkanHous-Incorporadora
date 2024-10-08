@@ -1298,25 +1298,35 @@
                     <div class="info-title">Fale com a gente</div>
                   </div>
                 </div>
-                <div class="col-md-9">
-                  <form class="js-form">
+          <div class="col-md-9">
+                  <form class="js-form" id="whatsappForm">
                     <div class="row">
                       <div class="form-group col-sm-6 col-lg-4">
-                        <input class="input-gray" type="text" name="name" required placeholder="Name*">
+                        <input class="input-gray" type="text" name="nome" id="name" required placeholder="Name*">
                       </div>
                       <div class="form-group col-sm-6 col-lg-4">
-                        <input class="input-gray" type="email" name="email" required placeholder="Email*">
+                        <input class="input-gray" type="email" name="email" id="email" required placeholder="Email*">
                       </div>
                       <div class="form-group col-sm-12 col-lg-4">
-                        <input class="input-gray" type="text" name="subject" placeholder="Subject (Optinal)">
+                        <!-- Campo de Assunto com formatação de estilo -->
+                        <select class="input-gray form-control" name="subject" id="subject" required>
+                          <option value="" disabled selected>Escolha um assunto*</option>
+                          <option value="Contato Comercial">Contato Comercial</option>
+                          <option value="Parcerias">Parcerias</option>
+                          <option value="Fornecedor">Fornecedor</option>
+                          <option value="Recursos Humanos">Recursos Humanos</option>
+                          <option value="Outro">Outro</option>
+                        </select>
                       </div>
                       <div class="form-group col-sm-12">
-                        <textarea class="input-gray" name="message"  required  placeholder="Message*"></textarea>
+                        <textarea class="input-gray" name="Mensagem" id="message" required placeholder="Message*"></textarea>
                       </div>
-                      <div class="col-sm-12"><button type="submit" class="btn-upper btn-yellow btn">Enviar Mensagem</button></div>
+                      <div class="col-sm-12">
+                        <button type="submit" class="btn-upper btn-yellow btn">Enviar WhatsApp</button>
+                      </div>
                     </div>
-                    <div class="success-message"><i class="fa fa-check text-primary"></i> Obrigado!. Sua mensagem foi enviada com Sucesso! Por favor aguarde! </div>
-                    <div class="error-message">Desculpe, algo deu errado.</div>
+                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you! Your message has been successfully sent...</div>
+                    <div class="error-message">Obrigado por entrar em contato com a Skan Hous.</div>
                   </form>
                 </div>
               </div>
