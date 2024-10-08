@@ -1849,16 +1849,6 @@ opacity: 0.8;
   padding-top: 8rem;
 }
 
-.contact-row a {
-  color: black; /* Define a cor do link como preta */
-  text-decoration: none; /* Remove o sublinhado do link */
-}
-
-.contact-row a:hover {
-  color: #ffc304; /* Cor amarela ao passar o mouse */
-  text-decoration: underline; /* Opcional: Adiciona o sublinhado ao hover */
-}
-
 
 /* 3.9 Footer */
 
