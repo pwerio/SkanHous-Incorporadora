@@ -786,40 +786,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="main-image-container">
         <img id="mainImage" src="images/projects/1-960x540.jpg" alt="Project Image" class="img-fluid">
       </div>
-      <!-- Thumbnails -->
-      <div class="thumbnail-container d-flex justify-content-center mt-3">
-        <img onclick="changeImage('images/projects/1-960x540.jpg')" src="images/projects/1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
-        <img onclick="changeImage('images/projects/2-960x540.jpg')" src="images/projects/2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
-        <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
-        <img onclick="changeImage('images/projects/4-960x540.jpg')" src="images/projects/4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
-        <img onclick="changeImage('images/projects/5-960x540.jpg')" src="images/projects/5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
-        <img onclick="changeImage('images/projects/6-960x540.jpg')" src="images/projects/6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
-        <img onclick="changeImage('images/projects/7-960x540.jpg')" src="images/projects/7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 7">
-        <img onclick="changeImage('images/projects/8-960x540.jpg')" src="images/projects/8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 8">
-        <img onclick="changeImage('images/projects/9-960x540.jpg')" src="images/projects/9-960x540.jpg" class="img-thumbnail" alt="Thumbnail 9">
-        <img onclick="changeImage('images/projects/10-960x540.jpg')" src="images/projects/10-960x540.jpg" class="img-thumbnail" alt="Thumbnail 10">
-        <img onclick="changeImage('images/projects/11-960x540.jpg')" src="images/projects/11-960x540.jpg" class="img-thumbnail" alt="Thumbnail 11">
-        <img onclick="changeImage('images/projects/12-960x540.jpg')" src="images/projects/12-960x540.jpg" class="img-thumbnail" alt="Thumbnail 12">
-        <img onclick="changeImage('images/projects/13-960x540.jpg')" src="images/projects/13-960x540.jpg" class="img-thumbnail" alt="Thumbnail 13">
-        <img onclick="changeImage('images/projects/14-960x540.jpg')" src="images/projects/14-960x540.jpg" class="img-thumbnail" alt="Thumbnail 14">
-        <img onclick="changeImage('images/projects/15-960x540.jpg')" src="images/projects/15-960x540.jpg" class="img-thumbnail" alt="Thumbnail 15">
-        <img onclick="changeImage('images/projects/16-960x540.jpg')" src="images/projects/16-960x540.jpg" class="img-thumbnail" alt="Thumbnail 16">
-        <img onclick="changeImage('images/projects/17-960x540.jpg')" src="images/projects/17-960x540.jpg" class="img-thumbnail" alt="Thumbnail 17">
-        <img onclick="changeImage('images/projects/18-960x540.jpg')" src="images/projects/18-960x540.jpg" class="img-thumbnail" alt="Thumbnail 18">
-        <img onclick="changeImage('images/projects/19-960x540.jpg')" src="images/projects/19-960x540.jpg" class="img-thumbnail" alt="Thumbnail 19">
-        <img onclick="changeImage('images/projects/20-960x540.jpg')" src="images/projects/20-960x540.jpg" class="img-thumbnail" alt="Thumbnail 20">
-        <img onclick="changeImage('images/projects/21-960x540.jpg')" src="images/projects/21-960x540.jpg" class="img-thumbnail" alt="Thumbnail 21">
-        <img onclick="changeImage('images/projects/22-960x540.jpg')" src="images/projects/22-960x540.jpg" class="img-thumbnail" alt="Thumbnail 22">
-        <img onclick="changeImage('images/projects/23-960x540.jpg')" src="images/projects/23-960x540.jpg" class="img-thumbnail" alt="Thumbnail 23">
-        <img onclick="changeImage('images/projects/24-960x540.jpg')" src="images/projects/24-960x540.jpg" class="img-thumbnail" alt="Thumbnail 24">
-        <img onclick="changeImage('images/projects/25-960x540.jpg')" src="images/projects/25-960x540.jpg" class="img-thumbnail" alt="Thumbnail 25">
-        <img onclick="changeImage('images/projects/26-960x540.jpg')" src="images/projects/26-960x540.jpg" class="img-thumbnail" alt="Thumbnail 26">
-        <img onclick="changeImage('images/projects/27-960x540.jpg')" src="images/projects/27-960x540.jpg" class="img-thumbnail" alt="Thumbnail 27">
-        <img onclick="changeImage('images/projects/28-960x540.jpg')" src="images/projects/28-960x540.jpg" class="img-thumbnail" alt="Thumbnail 28">
-        <img onclick="changeImage('images/projects/29-960x540.jpg')" src="images/projects/29-960x540.jpg" class="img-thumbnail" alt="Thumbnail 29">
-        <img onclick="changeImage('images/projects/30-960x540.jpg')" src="images/projects/30-960x540.jpg" class="img-thumbnail" alt="Thumbnail 30">
-        <img onclick="changeImage('images/projects/31-960x540.jpg')" src="images/projects/31-960x540.jpg" class="img-thumbnail" alt="Thumbnail 31">
-        <img onclick="changeImage('images/projects/32-960x540.jpg')" src="images/projects/32-960x540.jpg" class="img-thumbnail" alt="Thumbnail 32">
+      <!-- Thumbnails Carousel -->
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-3">
+        <button class="carousel-arrow" onclick="prevThumbnails()">❮</button>
+        <div class="thumbnail-container d-flex">
+          <img onclick="changeImage('images/projects/1-960x540.jpg')" src="images/projects/1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeImage('images/projects/2-960x540.jpg')" src="images/projects/2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeImage('images/projects/4-960x540.jpg')" src="images/projects/4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+          <img onclick="changeImage('images/projects/5-960x540.jpg')" src="images/projects/5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
+          <img onclick="changeImage('images/projects/6-960x540.jpg')" src="images/projects/6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
+          <img onclick="changeImage('images/projects/7-960x540.jpg')" src="images/projects/7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 7">
+          <img onclick="changeImage('images/projects/8-960x540.jpg')" src="images/projects/8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 8">
+          <img onclick="changeImage('images/projects/9-960x540.jpg')" src="images/projects/9-960x540.jpg" class="img-thumbnail" alt="Thumbnail 9">
+          <img onclick="changeImage('images/projects/10-960x540.jpg')" src="images/projects/10-960x540.jpg" class="img-thumbnail" alt="Thumbnail 10">
+          <img onclick="changeImage('images/projects/11-960x540.jpg')" src="images/projects/11-960x540.jpg" class="img-thumbnail" alt="Thumbnail 11">
+          <img onclick="changeImage('images/projects/12-960x540.jpg')" src="images/projects/12-960x540.jpg" class="img-thumbnail" alt="Thumbnail 12">
+          <img onclick="changeImage('images/projects/13-960x540.jpg')" src="images/projects/13-960x540.jpg" class="img-thumbnail" alt="Thumbnail 13">
+          <img onclick="changeImage('images/projects/14-960x540.jpg')" src="images/projects/14-960x540.jpg" class="img-thumbnail" alt="Thumbnail 14">
+          <img onclick="changeImage('images/projects/15-960x540.jpg')" src="images/projects/15-960x540.jpg" class="img-thumbnail" alt="Thumbnail 15">
+          <img onclick="changeImage('images/projects/16-960x540.jpg')" src="images/projects/16-960x540.jpg" class="img-thumbnail" alt="Thumbnail 16">
+          <img onclick="changeImage('images/projects/17-960x540.jpg')" src="images/projects/17-960x540.jpg" class="img-thumbnail" alt="Thumbnail 17">
+          <img onclick="changeImage('images/projects/18-960x540.jpg')" src="images/projects/18-960x540.jpg" class="img-thumbnail" alt="Thumbnail 18">
+          <img onclick="changeImage('images/projects/19-960x540.jpg')" src="images/projects/19-960x540.jpg" class="img-thumbnail" alt="Thumbnail 19">
+          <img onclick="changeImage('images/projects/20-960x540.jpg')" src="images/projects/20-960x540.jpg" class="img-thumbnail" alt="Thumbnail 20">
+          <img onclick="changeImage('images/projects/21-960x540.jpg')" src="images/projects/21-960x540.jpg" class="img-thumbnail" alt="Thumbnail 21">
+          <img onclick="changeImage('images/projects/22-960x540.jpg')" src="images/projects/22-960x540.jpg" class="img-thumbnail" alt="Thumbnail 22">
+          <img onclick="changeImage('images/projects/23-960x540.jpg')" src="images/projects/23-960x540.jpg" class="img-thumbnail" alt="Thumbnail 23">
+          <img onclick="changeImage('images/projects/24-960x540.jpg')" src="images/projects/24-960x540.jpg" class="img-thumbnail" alt="Thumbnail 24">
+          <img onclick="changeImage('images/projects/25-960x540.jpg')" src="images/projects/25-960x540.jpg" class="img-thumbnail" alt="Thumbnail 25">
+          <img onclick="changeImage('images/projects/26-960x540.jpg')" src="images/projects/26-960x540.jpg" class="img-thumbnail" alt="Thumbnail 26">
+          <img onclick="changeImage('images/projects/27-960x540.jpg')" src="images/projects/27-960x540.jpg" class="img-thumbnail" alt="Thumbnail 27">
+          <img onclick="changeImage('images/projects/28-960x540.jpg')" src="images/projects/28-960x540.jpg" class="img-thumbnail" alt="Thumbnail 28">
+          <img onclick="changeImage('images/projects/29-960x540.jpg')" src="images/projects/29-960x540.jpg" class="img-thumbnail" alt="Thumbnail 29">
+          <img onclick="changeImage('images/projects/30-960x540.jpg')" src="images/projects/30-960x540.jpg" class="img-thumbnail" alt="Thumbnail 30">
+          <img onclick="changeImage('images/projects/31-960x540.jpg')" src="images/projects/31-960x540.jpg" class="img-thumbnail" alt="Thumbnail 31">
+          <img onclick="changeImage('images/projects/32-960x540.jpg')" src="images/projects/32-960x540.jpg" class="img-thumbnail" alt="Thumbnail 32">  
+        </div>
+        <button class="carousel-arrow" onclick="nextThumbnails()">❯</button>
       </div>
     </div>
     <div class="col-lg-4">
@@ -837,14 +841,95 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="social-list pull-sm-right">
           <a href="#" class="icon ion-social-twitter"></a>
           <a href="#" class="icon ion-social-facebook"></a>
-          <a href="#" class="icon ion-social-googleplus"></a>
           <a href="#" class="icon ion-social-linkedin"></a>
-          <a href="#" class="icon ion-social-dribbble-outline"></a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Inline CSS for Responsiveness and Styling -->
+<style>
+  .main-image-container img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .thumbnail-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .thumbnail-container .img-thumbnail {
+    width: 120px; /* 30% maior que antes */
+    height: auto;
+    cursor: pointer;
+    border: none; /* Remove border */
+    border-radius: 4px;
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #FFCE04;
+  }
+
+  @media (max-width: 576px) {
+    .thumbnail-container .img-thumbnail {
+      width: 80px;
+    }
+  }
+</style>
+
+<!-- JavaScript for Image Switching and Carousel -->
+<script>
+  let currentStartIndex = 0;
+  const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
+  const thumbnailsPerView = 6;
+
+  function changeImage(src) {
+    document.getElementById('mainImage').src = src;
+  }
+
+  function updateThumbnailsVisibility() {
+    thumbnails.forEach((thumbnail, index) => {
+      thumbnail.style.display = (index >= currentStartIndex && index < currentStartIndex + thumbnailsPerView) ? 'inline-block' : 'none';
+    });
+  }
+
+  function prevThumbnails() {
+    if (currentStartIndex > 0) {
+      currentStartIndex -= thumbnailsPerView;
+      updateThumbnailsVisibility();
+    }
+  }
+
+  function nextThumbnails() {
+    if (currentStartIndex + thumbnailsPerView < thumbnails.length) {
+      currentStartIndex += thumbnailsPerView;
+      updateThumbnailsVisibility();
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => updateThumbnailsVisibility());
+</script>
 
 <!-- CSS for Responsiveness and Styling -->
 <style>
