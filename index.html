@@ -782,14 +782,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="project1" class="container zoom-anim-dialog mfp-hide">
   <div class="row">
     <div class="col-lg-8">
-      <!-- Main Image Display -->
-      <div class="main-image-container">
+      <!-- Main Image Display with Navigation Arrows -->
+      <div class="main-image-container position-relative">
+        <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
         <img id="mainImage" src="images/projects/1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
       </div>
       <!-- Thumbnails Carousel -->
-      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-3">
-        <button class="carousel-arrow" onclick="prevThumbnails()">❮</button>
-        <div class="thumbnail-container d-flex">
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
+        <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
+        <div class="thumbnail-container d-flex overflow-hidden">
           <img onclick="changeImage('images/projects/1-960x540.jpg')" src="images/projects/1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
           <img onclick="changeImage('images/projects/2-960x540.jpg')" src="images/projects/2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
           <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
@@ -823,7 +825,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img onclick="changeImage('images/projects/31-960x540.jpg')" src="images/projects/31-960x540.jpg" class="img-thumbnail" alt="Thumbnail 31">
           <img onclick="changeImage('images/projects/32-960x540.jpg')" src="images/projects/32-960x540.jpg" class="img-thumbnail" alt="Thumbnail 32">  
         </div>
-        <button class="carousel-arrow" onclick="nextThumbnails()">❯</button>
+        <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
       </div>
     </div>
     <div class="col-lg-4">
@@ -834,13 +836,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><span class="left">Entrega:</span><span class="right">Setembro 2023</span></li>
         <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular</span></li>
         <li><span class="left">Arquiteta:</span><span class="right">Alessandra Pretti</span></li>
+        <li><span class="left">Orçamento:</span><span class="right">R$ 2.600.000,00</span></li>
       </ul>
       <div class="project-detail-meta">
         <span class="left text-dark hidden-xs pull-sm-left">Compartilhar:</span>
         <div class="social-list pull-sm-right">
           <a href="#" class="icon ion-social-twitter"></a>
           <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-googleplus"></a>
           <a href="#" class="icon ion-social-linkedin"></a>
+          <a href="#" class="icon ion-social-dribbble-outline"></a>
         </div>
       </div>
     </div>
@@ -849,32 +854,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Inline CSS for Responsiveness and Styling -->
 <style>
-  .main-image-container img {
+  .main-image-container {
+    position: relative;
     width: 100%;
     max-width: 960px;
+    margin: auto;
+  }
+
+  .main-image-container img {
+    width: 100%;
     height: auto;
     border-radius: 8px;
+  }
+
+  .main-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+  }
+
+  .main-carousel-arrow.prev {
+    left: 10px;
+  }
+
+  .main-carousel-arrow.next {
+    right: 10px;
+  }
+
+  .main-carousel-arrow:hover {
+    color: #FFCE04;
   }
 
   .thumbnail-carousel {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: 24px;
   }
 
   .thumbnail-container {
     display: flex;
     gap: 8px;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 80%;
   }
 
   .thumbnail-container .img-thumbnail {
-    width: 120px; /* 30% maior que antes */
+    width: 100px;
     height: auto;
     cursor: pointer;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .thumbnail-container .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnail-container .img-thumbnail.selected {
+    border: 3px solid #FFCE04; /* Destaque do thumbnail selecionado */
   }
 
   .carousel-arrow {
@@ -889,78 +935,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .carousel-arrow:hover {
     color: #FFCE04;
   }
-
-  @media (max-width: 576px) {
-    .thumbnail-container .img-thumbnail {
-      width: 80px;
-    }
-  }
 </style>
 
 <!-- JavaScript for Image Switching and Carousel -->
 <script>
-  let currentStartIndex = 0;
   const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
-  const thumbnailsPerView = 6;
+  const thumbnailContainer = document.querySelector('.thumbnail-container');
+  let mainImageIndex = 0;
 
-  function changeImage(src) {
+  const mainImages = [
+    'images/projects/1-960x540.jpg',
+    'images/projects/2-960x540.jpg',
+    'images/projects/3-960x540.jpg',
+    'images/projects/4-960x540.jpg',
+    'images/projects/5-960x540.jpg',
+    'images/projects/6-960x540.jpg'
+  ];
+
+  function changeMainImage(src, element) {
     document.getElementById('mainImage').src = src;
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    element.classList.add('selected');
+    mainImageIndex = mainImages.indexOf(src);
   }
 
-  function updateThumbnailsVisibility() {
-    thumbnails.forEach((thumbnail, index) => {
-      thumbnail.style.display = (index >= currentStartIndex && index < currentStartIndex + thumbnailsPerView) ? 'inline-block' : 'none';
+  function prevMainImage() {
+    mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
+    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+  }
+
+  function nextMainImage() {
+    mainImageIndex = (mainImageIndex + 1) % mainImages.length;
+    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+  }
+
+  function highlightThumbnail(src) {
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src.includes(src));
+    if (thumbnail) thumbnail.classList.add('selected');
+  }
+
+  function slideThumbnails(direction) {
+    const scrollAmount = 120; // Control the scroll step
+    thumbnailContainer.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
     });
-  }
-
-  function prevThumbnails() {
-    if (currentStartIndex > 0) {
-      currentStartIndex -= thumbnailsPerView;
-      updateThumbnailsVisibility();
-    }
-  }
-
-  function nextThumbnails() {
-    if (currentStartIndex + thumbnailsPerView < thumbnails.length) {
-      currentStartIndex += thumbnailsPerView;
-      updateThumbnailsVisibility();
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", () => updateThumbnailsVisibility());
-</script>
-
-<!-- CSS for Responsiveness and Styling -->
-<style>
-  .main-image-container img {
-    width: 100%;
-    max-width: 960px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .thumbnail-container {
-    gap: 8px;
-  }
-
-  .thumbnail-container .img-thumbnail {
-    width: 80px;
-    height: auto;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  @media (max-width: 576px) {
-    .thumbnail-container .img-thumbnail {
-      width: 60px;
-    }
-  }
-</style>
-
-<!-- JavaScript for Image Switching -->
-<script>
-  function changeImage(src) {
-    document.getElementById('mainImage').src = src;
   }
 </script>
 
