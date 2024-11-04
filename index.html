@@ -935,54 +935,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </style>
 
-<!-- JavaScript for Image Switching and Carousel -->
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
 <script>
+  const mainImageElement = document.getElementById('mainImage');
   const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
   const thumbnailContainer = document.querySelector('.thumbnail-container');
+
+  // Array completo de todas as imagens principais
+  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
   let mainImageIndex = 0;
 
-  const mainImages = [
-    'images/projects/1-960x540.jpg',
-    'images/projects/2-960x540.jpg',
-    'images/projects/3-960x540.jpg',
-    'images/projects/4-960x540.jpg',
-    'images/projects/5-960x540.jpg',
-    'images/projects/6-960x540.jpg'
-  ];
-
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
   function changeMainImage(src, element) {
-    document.getElementById('mainImage').src = src;
+    mainImageElement.src = src;
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
     element.classList.add('selected');
-    mainImageIndex = mainImages.indexOf(src);
+    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
+    scrollToThumbnail(element); // Rola para o thumbnail ativo
   }
 
+  // Funções para setas de navegação da imagem principal
   function prevMainImage() {
     mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
-    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
     highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
   }
 
   function nextMainImage() {
     mainImageIndex = (mainImageIndex + 1) % mainImages.length;
-    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
     highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
   }
 
+  // Destaque do thumbnail correspondente à imagem principal
   function highlightThumbnail(src) {
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
-    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src.includes(src));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
     if (thumbnail) thumbnail.classList.add('selected');
   }
 
+  // Função para deslizar os thumbnails horizontalmente
   function slideThumbnails(direction) {
-    const scrollAmount = 120; // Control the scroll step
+    const scrollAmount = 120; // Controla o movimento de scroll
     thumbnailContainer.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth'
     });
   }
+
+  // Função para centralizar o thumbnail ativo na visualização do carrossel
+  function scrollToThumbnail(element) {
+    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
+    thumbnailContainer.scrollBy({
+      left: offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
 </script>
+
+
 
 
         <!-- Project Modal Dialog 2 -->
@@ -1042,25 +1064,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
         <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
         <div class="thumbnail-container d-flex overflow-hidden">
-          <img onclick="changeImage('images/projects/3.1-960x540.jpg')" src="images/projects/3.1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.1">
-          <img onclick="changeImage('images/projects/3.2-960x540.jpg')" src="images/projects/3.2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.2">
-          <img onclick="changeImage('images/projects/3.3-960x540.jpg')" src="images/projects/3.3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.3">
-          <img onclick="changeImage('images/projects/3.4-960x540.jpg')" src="images/projects/3.4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.4">
-          <img onclick="changeImage('images/projects/3.5-960x540.jpg')" src="images/projects/3.5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.5">
-          <img onclick="changeImage('images/projects/3.6-960x540.jpg')" src="images/projects/3.6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.6">
-          <img onclick="changeImage('images/projects/3.7-960x540.jpg')" src="images/projects/3.7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.7">
-          <img onclick="changeImage('images/projects/3.8-960x540.jpg')" src="images/projects/3.8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3.8">
+          <img onclick="changeImage('images/projects/3.1-960x540.jpg')" src="images/projects/3.1-426x574.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeImage('images/projects/3.2-960x540.jpg')" src="images/projects/3.2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeImage('images/projects/3.3-960x540.jpg')" src="images/projects/3.3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeImage('images/projects/3.4-960x540.jpg')" src="images/projects/3.4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+          <img onclick="changeImage('images/projects/3.5-960x540.jpg')" src="images/projects/3.5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
+          <img onclick="changeImage('images/projects/3.6-960x540.jpg')" src="images/projects/3.6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
+          <img onclick="changeImage('images/projects/3.7-960x540.jpg')" src="images/projects/3.7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 7">
+          <img onclick="changeImage('images/projects/3.8-960x540.jpg')" src="images/projects/3.8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 8">
         </div>
         <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
       </div>
     </div>
     <div class="col-lg-4">
-      <h3 class="project-detail-title">Skan Hous 2.0 - Estudio Elevare</h3>
-      <p class="project-detail-text">Um novo projeto do escritório Elevare, a versão 2.0 representa um avanço em conforto, segurança e materiais utilizados. Praticidade e segurança aliada a acabamentos de qualidade.</p>
+      <h3 class="project-detail-title">Skan Hous 2.0 - Evolução</h3>
+      <p class="project-detail-text">Um novo conceito de casa modular. Avançada e tecnológica.</p>
       <ul class="project-detail-list text-dark">
         <li><span class="left">Clientes:</span><span class="right">Skan Hous</span></li>
-        <li><span class="left">Entrega:</span><span class="right">Novembro 2024</span></li>
-        <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular</span></li>
+        <li><span class="left">Entrega:</span><span class="right">Janeiro 2025</span></li>
+        <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular Alto Padrão</span></li>
         <li><span class="left">Arquiteta:</span><span class="right">Alessandra Pretti</span></li>
       </ul>
       <div class="project-detail-meta">
@@ -1068,6 +1090,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="social-list pull-sm-right">
           <a href="#" class="icon ion-social-twitter"></a>
           <a href="#" class="icon ion-social-facebook"></a>
+
           <a href="#" class="icon ion-social-linkedin"></a>
         </div>
       </div>
@@ -1160,57 +1183,74 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </style>
 
-<!-- JavaScript for Image Switching and Carousel -->
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
 <script>
+  const mainImageElement = document.getElementById('mainImage');
   const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
   const thumbnailContainer = document.querySelector('.thumbnail-container');
+
+  // Array completo de todas as imagens principais
+  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
   let mainImageIndex = 0;
 
-  const mainImages = [
-    'images/projects/3.1-960x540.jpg',
-    'images/projects/3.2-960x540.jpg',
-    'images/projects/3.3-960x540.jpg',
-    'images/projects/3.4-960x540.jpg',
-    'images/projects/3.5-960x540.jpg',
-    'images/projects/3.6-960x540.jpg',
-    'images/projects/3.7-960x540.jpg',
-    'images/projects/3.8-960x540.jpg'
-  ];
-
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
   function changeMainImage(src, element) {
-    document.getElementById('mainImage').src = src;
+    mainImageElement.src = src;
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
     element.classList.add('selected');
-    mainImageIndex = mainImages.indexOf(src);
+    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
+    scrollToThumbnail(element); // Rola para o thumbnail ativo
   }
 
+  // Funções para setas de navegação da imagem principal
   function prevMainImage() {
     mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
-    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
     highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
   }
 
   function nextMainImage() {
     mainImageIndex = (mainImageIndex + 1) % mainImages.length;
-    document.getElementById('mainImage').src = mainImages[mainImageIndex];
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
     highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
   }
 
+  // Destaque do thumbnail correspondente à imagem principal
   function highlightThumbnail(src) {
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
-    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src.includes(src));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
     if (thumbnail) thumbnail.classList.add('selected');
   }
 
+  // Função para deslizar os thumbnails horizontalmente
   function slideThumbnails(direction) {
-    const scrollAmount = 120; // Control the scroll step
+    const scrollAmount = 120; // Controla o movimento de scroll
     thumbnailContainer.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth'
     });
   }
-</script>
 
+  // Função para centralizar o thumbnail ativo na visualização do carrossel
+  function scrollToThumbnail(element) {
+    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
+    thumbnailContainer.scrollBy({
+      left: offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
+</script>
 
         <!-- Project Modal Dialog 4 -->
         <div id="project4" class="container zoom-anim-dialog mfp-hide">
