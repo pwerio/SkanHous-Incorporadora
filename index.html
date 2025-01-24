@@ -965,21 +965,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-lg-8">
       <!-- Main Image Container -->
       <div class="main-image-container">
-        <img id="mainImage" alt="Skan Hous" class="project-detail-img img-fluid" src="images/projects/2-680x680.jpg">
+        <img id="mainImage" alt="Skan Hous" class="project-detail-img img-fluid" src="">
       </div>
       <!-- Thumbnail Navigation -->
       <div class="thumbnail-container mt-3">
         <img onclick="changeImage('images/projects/2.1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/2.2-960x540.jpg')" src="images/projects/2.2-960x540.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/2.3-960x540.jpg')" src="images/projects/2.3-960x540.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/2.4-960x540.jpg')" src="images/projects/2.4-960x540.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/2.5-960x540.jpg')" src="images/projects/2.5-960x540.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/2.6-960x540.jpg')" src="images/projects/2.6-960x540.jpg" class="thumbnail">
+
       </div>
     </div>
     <div class="col-lg-4">
-      <h3 class="project-detail-title">Skan Hous Woodframe by F:Poles</h3>
-      <p class="project-detail-text">Este projeto foi desenvolvido pelo escitório do Arquiteto Fernando Poles para o Lago Azul em Sorocaba. Um projeto modular de alto padrão para lotes de mil a dois mil metros quadrados.</p>
+      <h3 class="project-detail-title">Skan Hous Woodframe by FPoles Arquitetos</h3>
+      <p class="project-detail-text">Este projeto foi desenvolvido pelo escitório do Arquiteto Fernando Poles. Faz parte  projeto modular de alto padrão Skan Hous. Ele utilize madeira engenheirada MLC que esta em linha com visão de Sustentabilidade e Qualidade da empresa.</p>
       <ul class="project-detail-list text-dark">
         <li>
           <span class="left">Cliente:</span>
@@ -995,7 +996,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
         <li>
           <span class="left">Arquitetura:</span>
-          <span class="right">F:Poles</span>
+          <span class="right">FPoles</span>
         </li>
         <li>
           <span class="left">Orçamento:</span>
@@ -1044,23 +1045,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </style>
 
-<!-- Script para Alterar a Imagem Principal -->
-<script>
-  function changeImage(imageSrc) {
-    const mainImage = document.getElementById('mainImage');
-    mainImage.src = imageSrc;
+<!-- Script para Configurar e Alterar a Imagem Principal -->
 
-    // Atualiza a classe "active" nas thumbnails
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(thumbnail => {
-      if (thumbnail.src.includes(imageSrc)) {
-        thumbnail.classList.add('active');
-      } else {
-        thumbnail.classList.remove('active');
-      }
-    });
-  }
+<!-- Modal com imagem principal -->
+<div id="project2" class="container zoom-anim-dialog mfp-hide">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Imagem principal com ID para alteração -->
+      <img id="mainImage" alt="" class="project-detail-img" src="images/projects/2.1-960x540.jpg">
+    </div>
+    <div class="col-lg-4">
+      <h3 class="project-detail-title">Skan Hous Woodframe by F:Poles</h3>
+      <p class="project-detail-text">Este projeto foi desenvolvido pelo escritório do Arquiteto Fernando Poles para o Lago Azul em Sorocaba. Um projeto modular de alto padrão para lotes de mil a dois mil metros quadrados.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Definir a imagem principal quando a página for carregada
+  window.onload = function() {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = 'images/projects/2.1-960x540.jpg'; // A primeira imagem será sempre esta
+  };
 </script>
+
 
 
 <!-- Project Modal Dialog 1 -->
