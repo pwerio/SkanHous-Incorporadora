@@ -959,48 +959,106 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-        <!-- Project Modal Dialog 2 -->
-        <div id="project2" class="container zoom-anim-dialog mfp-hide">
-          <div class="row">
-            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/projects/2-680x680.jpg"></div>
-            <div class="col-lg-4">
-              <h3 class="project-detail-title">Skan Hous Woodframe by F:Poles</h3>
-              <p class="project-detail-text">Este projeto foi desenvolvido pelo escitório do Arquiteto Fernando Poles para o Lago Azul em Sorocaba. Um projeto modular de alto padrão para lotes de mil a dois mil metros quadrados.</p>
-              <ul class="project-detail-list text-dark">
-                <li>
-                  <span class="left">Cliente:</span>
-                  <span class="right">Skan Hous</span>
-                </li>
-                <li>
-                  <span class="left">Disponibilidade:</span>
-                  <span class="right">1º Trimestre 2025.</span>
-                </li>
-                <li>
-                  <span class="left">Tipo de Projeto:</span>
-                  <span class="right">Residencial Alto Padrão</span>
-                </li>
-                <li>
-                  <span class="left">Arquitetura:</span>
-                  <span class="right">F:Poles</span>
-                </li>
-                <li>
-                  <span class="left">Orçamento:</span>
-                  <span class="right">Consultar</span>
-                </li>
-              </ul>
-              <div class="project-detail-meta">
-                <span class="left text-dark hidden-xs pull-sm-left">Compartilhe:</span>
-                <div class="social-list pull-sm-right">
-                  <a href="" class="icon ion-social-twitter"></a>
-                  <a href="" class="icon ion-social-facebook"></a>
-                  <a href="" class="icon ion-social-googleplus"></a>
-                  <a href="" class="icon ion-social-linkedin"></a>
-                  <a href="" class="icon ion-social-dribbble-outline"></a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- Project Modal Dialog 2 -->
+<div id="project2" class="container zoom-anim-dialog mfp-hide">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Main Image Container -->
+      <div class="main-image-container">
+        <img id="mainImage" alt="Skan Hous" class="project-detail-img img-fluid" src="images/projects/2-680x680.jpg">
+      </div>
+      <!-- Thumbnail Navigation -->
+      <div class="thumbnail-container mt-3">
+        <img onclick="changeImage('images/projects/2-680x680.jpg')" src="images/projects/2-680x680.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/3-680x680.jpg')" src="images/projects/3-680x680.jpg" class="thumbnail">
+        <img onclick="changeImage('images/projects/4-680x680.jpg')" src="images/projects/4-680x680.jpg" class="thumbnail">
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h3 class="project-detail-title">Skan Hous Woodframe by F:Poles</h3>
+      <p class="project-detail-text">Este projeto foi desenvolvido pelo escitório do Arquiteto Fernando Poles para o Lago Azul em Sorocaba. Um projeto modular de alto padrão para lotes de mil a dois mil metros quadrados.</p>
+      <ul class="project-detail-list text-dark">
+        <li>
+          <span class="left">Cliente:</span>
+          <span class="right">Skan Hous</span>
+        </li>
+        <li>
+          <span class="left">Disponibilidade:</span>
+          <span class="right">1º Trimestre 2025.</span>
+        </li>
+        <li>
+          <span class="left">Tipo de Projeto:</span>
+          <span class="right">Residencial Alto Padrão</span>
+        </li>
+        <li>
+          <span class="left">Arquitetura:</span>
+          <span class="right">F:Poles</span>
+        </li>
+        <li>
+          <span class="left">Orçamento:</span>
+          <span class="right">Consultar</span>
+        </li>
+      </ul>
+      <div class="project-detail-meta">
+        <span class="left text-dark hidden-xs pull-sm-left">Compartilhe:</span>
+        <div class="social-list pull-sm-right">
+          <a href="" class="icon ion-social-twitter"></a>
+          <a href="" class="icon ion-social-facebook"></a>
+          <a href="" class="icon ion-social-googleplus"></a>
+          <a href="" class="icon ion-social-linkedin"></a>
+          <a href="" class="icon ion-social-dribbble-outline"></a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS para Estilizar o Modal e Thumbnails -->
+<style>
+  .main-image-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+
+  .thumbnail:hover,
+  .thumbnail.active {
+    border: 2px solid #007bff;
+  }
+</style>
+
+<!-- Script para Alterar a Imagem Principal -->
+<script>
+  function changeImage(imageSrc) {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = imageSrc;
+
+    // Atualiza a classe "active" nas thumbnails
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(thumbnail => {
+      if (thumbnail.src.includes(imageSrc)) {
+        thumbnail.classList.add('active');
+      } else {
+        thumbnail.classList.remove('active');
+      }
+    });
+  }
+</script>
+
 
 <!-- Project Modal Dialog 1 -->
 <div id="project1" class="container zoom-anim-dialog mfp-hide">
