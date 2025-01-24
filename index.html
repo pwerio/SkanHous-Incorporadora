@@ -963,104 +963,206 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="project2" class="container zoom-anim-dialog mfp-hide">
   <div class="row">
     <div class="col-lg-8">
-      <!-- Main Image Container -->
-      <div class="main-image-container">
-        <img id="mainImage" alt="Skan Hous" class="project-detail-img img-fluid" src="images/projects/2-680x680.jpg">
+      <!-- Main Image Display with Navigation Arrows -->
+      <div class="main-image-container position-relative">
+        <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
+        <img id="mainImage" src="images/projects/1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
       </div>
-      <!-- Thumbnail Navigation -->
-      <div class="thumbnail-container mt-3">
-        <img onclick="changeImage('images/projects/2.1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.2-960x540.jpg')" src="images/projects/2.2-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.3-960x540.jpg')" src="images/projects/2.3-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.4-960x540.jpg')" src="images/projects/2.4-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.5-960x540.jpg')" src="images/projects/2.5-960x540.jpg" class="thumbnail">
-        <img onclick="changeImage('images/projects/2.6-960x540.jpg')" src="images/projects/2.6-960x540.jpg" class="thumbnail">
+      <!-- Thumbnails Carousel -->
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
+        <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
+        <div class="thumbnail-container d-flex overflow-hidden">
+          <img onclick="changeImage('images/projects/1-960x540.jpg')" src="images/projects/2.1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeImage('images/projects/2-960x540.jpg')" src="images/projects/2.2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/2.3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeImage('images/projects/4-960x540.jpg')" src="images/projects/2.4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+          <img onclick="changeImage('images/projects/5-960x540.jpg')" src="images/projects/2.5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
+          <img onclick="changeImage('images/projects/6-960x540.jpg')" src="images/projects/2.6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
+          <img onclick="changeImage('images/projects/7-960x540.jpg')" src="images/projects/7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 7">
+          <img onclick="changeImage('images/projects/8-960x540.jpg')" src="images/projects/8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 8">
+ 
+        </div>
+        <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
       </div>
     </div>
     <div class="col-lg-4">
-      <h3 class="project-detail-title">Skan Hous Woodframe by F:Poles</h3>
-      <p class="project-detail-text">Este projeto foi desenvolvido pelo escitório do Arquiteto Fernando Poles para o Lago Azul em Sorocaba. Um projeto modular de alto padrão para lotes de mil a dois mil metros quadrados.</p>
+      <h3 class="project-detail-title">Skan Hous 1.0 - Pinheirinho Itu</h3>
+      <p class="project-detail-text">Construída em um terreno de 20.000 m² cercada por uma natureza exuberante, este projeto modular da Arquiteta Alessandra Pretti de 350 m² foi erguido em menos de 7 meses.</p>
       <ul class="project-detail-list text-dark">
-        <li>
-          <span class="left">Cliente:</span>
-          <span class="right">Skan Hous</span>
-        </li>
-        <li>
-          <span class="left">Disponibilidade:</span>
-          <span class="right">1º Trimestre 2025.</span>
-        </li>
-        <li>
-          <span class="left">Tipo de Projeto:</span>
-          <span class="right">Residencial Alto Padrão</span>
-        </li>
-        <li>
-          <span class="left">Arquitetura:</span>
-          <span class="right">F:Poles</span>
-        </li>
-        <li>
-          <span class="left">Orçamento:</span>
-          <span class="right">Consultar</span>
-        </li>
+        <li><span class="left">Clientes:</span><span class="right">Pedro e Bianca</span></li>
+        <li><span class="left">Entrega:</span><span class="right">Setembro 2023</span></li>
+        <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular</span></li>
+        <li><span class="left">Arquiteta:</span><span class="right">Alessandra Pretti</span></li>
       </ul>
       <div class="project-detail-meta">
-        <span class="left text-dark hidden-xs pull-sm-left">Compartilhe:</span>
+        <span class="left text-dark hidden-xs pull-sm-left">Compartilhar:</span>
         <div class="social-list pull-sm-right">
-          <a href="" class="icon ion-social-twitter"></a>
-          <a href="" class="icon ion-social-facebook"></a>
-          <a href="" class="icon ion-social-googleplus"></a>
-          <a href="" class="icon ion-social-linkedin"></a>
-          <a href="" class="icon ion-social-dribbble-outline"></a>
+          <a href="#" class="icon ion-social-twitter"></a>
+          <a href="#" class="icon ion-social-instagram"></a>
+          <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-linkedin"></a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- CSS para Estilizar o Modal e Thumbnails -->
+<!-- Inline CSS for Responsiveness and Styling -->
 <style>
   .main-image-container {
     position: relative;
-    text-align: center;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .main-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .main-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+  }
+
+  .main-carousel-arrow.prev {
+    left: 10px;
+  }
+
+  .main-carousel-arrow.next {
+    right: 10px;
+  }
+
+  .main-carousel-arrow:hover {
+    color: #FFCE04;
+  }
+
+  .thumbnail-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
   }
 
   .thumbnail-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    overflow-x: hidden;
+    width: 80%;
   }
 
-  .thumbnail {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+  .thumbnail-container .img-thumbnail {
+    width: 100px;
+    height: auto;
     cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.3s ease;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
   }
 
-  .thumbnail:hover,
-  .thumbnail.active {
-    border: 2px solid #007bff;
+  .thumbnail-container .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnail-container .img-thumbnail.selected {
+    border: 3px solid #FFCE04; /* Destaque do thumbnail selecionado */
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #FFCE04;
   }
 </style>
 
-<!-- Script para Alterar a Imagem Principal -->
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
 <script>
-  function changeImage(imageSrc) {
-    const mainImage = document.getElementById('mainImage');
-    mainImage.src = imageSrc;
+  const mainImageElement = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
+  const thumbnailContainer = document.querySelector('.thumbnail-container');
 
-    // Atualiza a classe "active" nas thumbnails
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(thumbnail => {
-      if (thumbnail.src.includes(imageSrc)) {
-        thumbnail.classList.add('active');
-      } else {
-        thumbnail.classList.remove('active');
-      }
+  // Array completo de todas as imagens principais
+  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
+  let mainImageIndex = 0;
+
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
+  function changeMainImage(src, element) {
+    mainImageElement.src = src;
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    element.classList.add('selected');
+    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
+    scrollToThumbnail(element); // Rola para o thumbnail ativo
+  }
+
+  // Funções para setas de navegação da imagem principal
+  function prevMainImage() {
+    mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  function nextMainImage() {
+    mainImageIndex = (mainImageIndex + 1) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  // Destaque do thumbnail correspondente à imagem principal
+  function highlightThumbnail(src) {
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
+    if (thumbnail) thumbnail.classList.add('selected');
+  }
+
+  // Função para deslizar os thumbnails horizontalmente
+  function slideThumbnails(direction) {
+    const scrollAmount = 120; // Controla o movimento de scroll
+    thumbnailContainer.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
     });
   }
+
+  // Função para centralizar o thumbnail ativo na visualização do carrossel
+  function scrollToThumbnail(element) {
+    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
+    thumbnailContainer.scrollBy({
+      left: offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
 </script>
+
+
 
 
 <!-- Project Modal Dialog 1 -->
