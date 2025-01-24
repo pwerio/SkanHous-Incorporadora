@@ -935,17 +935,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 
-<!-- Project Modal Dialog 2 -->
+<!-- Modal para o projeto -->
 <div id="project2" class="container zoom-anim-dialog mfp-hide">
   <div class="row">
     <div class="col-lg-8">
-      <!-- Main Image Display with Navigation Arrows -->
+      <!-- Imagem Principal com Navegação -->
       <div class="main-image-container position-relative">
         <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
-        <img id="mainImage" src="images/projects/2.1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <img id="mainImage" src="images/projects/2.1-960x540.jpg" alt="Imagem do Projeto" class="img-fluid">
         <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
       </div>
-      <!-- Thumbnails Carousel -->
+      <!-- Carrossel de Thumbnails -->
       <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
         <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
         <div class="thumbnail-container d-flex overflow-hidden">
@@ -980,7 +980,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- Inline CSS for Responsiveness and Styling -->
+<!-- Estilos -->
 <style>
   .main-image-container {
     position: relative;
@@ -1065,20 +1065,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </style>
 
-<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
+<!-- JavaScript -->
 <script>
   const mainImageElement = document.getElementById('mainImage');
   const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
-  const thumbnailContainer = document.querySelector('.thumbnail-container');
 
-  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
+  // Função para alterar a imagem principal
   function changeMainImage(src, element) {
+    // Atualiza a imagem principal
     mainImageElement.src = src;
+
+    // Remove o destaque de todos os thumbnails
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+
+    // Destaca o thumbnail selecionado
     element.classList.add('selected');
   }
 
-  // Funções para setas de navegação da imagem principal
+  // Função para navegar entre as imagens principais
   let mainImageIndex = 0;
   const mainImages = [
     'images/projects/2.1-960x540.jpg',
@@ -1089,19 +1093,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     'images/projects/2.6-960x540.jpg'
   ];
 
-  // Função para navegar entre as imagens principais
+  // Função para navegar para a imagem anterior
   function prevMainImage() {
     mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
     mainImageElement.src = mainImages[mainImageIndex];
     updateThumbnailSelection();
   }
 
+  // Função para navegar para a próxima imagem
   function nextMainImage() {
     mainImageIndex = (mainImageIndex + 1) % mainImages.length;
     mainImageElement.src = mainImages[mainImageIndex];
     updateThumbnailSelection();
   }
 
+  // Atualiza a seleção do thumbnail conforme a imagem principal
   function updateThumbnailSelection() {
     thumbnails.forEach((thumb, index) => {
       if (mainImages[mainImageIndex] === thumb.src) {
@@ -1115,18 +1121,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Função para deslizar os thumbnails horizontalmente
   function slideThumbnails(direction) {
     const scrollAmount = 120; // Controla o movimento de scroll
-    thumbnailContainer.scrollBy({
+    document.querySelector('.thumbnail-container').scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth'
     });
   }
 
-  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
-  });
-
-  // Destaca o primeiro thumbnail por padrão
+  // Inicializa com a seleção correta do thumbnail
   updateThumbnailSelection();
 </script>
 
