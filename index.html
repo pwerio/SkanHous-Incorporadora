@@ -1071,41 +1071,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
   const thumbnailContainer = document.querySelector('.thumbnail-container');
 
-  // Array completo de todas as imagens principais
-  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
-  let mainImageIndex = 0;
-
   // Função para alterar a imagem principal e rolar até o thumbnail correspondente
   function changeMainImage(src, element) {
     mainImageElement.src = src;
     thumbnails.forEach(thumb => thumb.classList.remove('selected'));
     element.classList.add('selected');
-    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
-    scrollToThumbnail(element); // Rola para o thumbnail ativo
   }
 
   // Funções para setas de navegação da imagem principal
+  let mainImageIndex = 0;
+  const mainImages = [
+    'images/projects/2.1-960x540.jpg',
+    'images/projects/2.2-960x540.jpg',
+    'images/projects/2.3-960x540.jpg',
+    'images/projects/2.4-960x540.jpg',
+    'images/projects/2.5-960x540.jpg',
+    'images/projects/2.6-960x540.jpg'
+  ];
+
+  // Função para navegar entre as imagens principais
   function prevMainImage() {
     mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
     mainImageElement.src = mainImages[mainImageIndex];
-    const selectedThumbnail = thumbnails[mainImageIndex];
-    highlightThumbnail(mainImages[mainImageIndex]);
-    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+    updateThumbnailSelection();
   }
 
   function nextMainImage() {
     mainImageIndex = (mainImageIndex + 1) % mainImages.length;
     mainImageElement.src = mainImages[mainImageIndex];
-    const selectedThumbnail = thumbnails[mainImageIndex];
-    highlightThumbnail(mainImages[mainImageIndex]);
-    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+    updateThumbnailSelection();
   }
 
-  // Destaque do thumbnail correspondente à imagem principal
-  function highlightThumbnail(src) {
-    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
-    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
-    if (thumbnail) thumbnail.classList.add('selected');
+  function updateThumbnailSelection() {
+    thumbnails.forEach((thumb, index) => {
+      if (mainImages[mainImageIndex] === thumb.src) {
+        thumb.classList.add('selected');
+      } else {
+        thumb.classList.remove('selected');
+      }
+    });
   }
 
   // Função para deslizar os thumbnails horizontalmente
@@ -1117,21 +1121,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   }
 
-  // Função para centralizar o thumbnail ativo na visualização do carrossel
-  function scrollToThumbnail(element) {
-    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
-    const elementRect = element.getBoundingClientRect();
-    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
-    thumbnailContainer.scrollBy({
-      left: offset,
-      behavior: 'smooth'
-    });
-  }
-
   // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
   thumbnails.forEach(thumb => {
     thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
   });
+
+  // Destaca o primeiro thumbnail por padrão
+  updateThumbnailSelection();
 </script>
 
 
