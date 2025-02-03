@@ -1,0 +1,1559 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayƒer','GTM-W44WM8T4');</script>
+<!-- End Google Tag Manager -->
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Skan Hous Incorporadora">
+  <meta name="author" content="Paul">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+  <title>Skan Hous Incorporadora</title> 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W44WM8T4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+
+  <div class="wrapper boxed">
+
+    <!-- Content CLick Capture-->
+    <div class="click-capture"></div>
+
+    <!-- Sidebar Menu-->
+    <div class="menu"> 
+      <span class="close-menu icon-cross right-boxed"></span>
+      <div class="menu-lang right-boxed">
+        <a href="" class="active">Pt</a>
+        <a href="">En</a>
+        <a href="">Es</a>
+      </div>
+      <nav class="nav mobile-menu">
+        <ul class="menu-list right-boxed">
+          <li>
+            <a  href="#main">Home</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#clients">Clientes</a>
+          </li>
+          <li>
+            <a href="#team">Missão</a>
+          </li>
+          <li>
+            <a href="#contacts">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-footer right-boxed">
+        <div class="social-list">
+          <a href="#" class="icon ion-social-twitter"></a>
+          <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-googleplus"></a>
+          <a href="#" class="icon ion-social-linkedin"></a>
+          <a href="#" class="icon ion-social-dribbble-outline"></a>
+        </div>
+        <div class="copy">© Skan Hous 2024. Todos os Direitos Reservados<br> Criado por Skan Hous</div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar boxed js-navbar">
+      
+      <!-- Brand -->
+      <a class="brand" href="#">
+        <img alt="" src="images/brand.png">
+        <div class="brand-info">
+          <div class="brand-name">SKANHOUS</div>
+          <div class="brand-text">Incorporadora</div>
+        </div>
+      </a>
+
+      <!-- Phone -->
+      <address class="navbar-address visible-md visible-xl">
+        WhatsApp: <a href="https://wa.me/5511991001961" class="text-dark" target="_blank">(11) 99100-1961</a>
+      </address>
+
+      <!-- Button -->
+      <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Social -->
+      <div class="social-list hidden-xs">
+        <a href="https://www.linkedin.com/company/skan-hous/" class="icon ion-social-linkedin"></a>
+        <a href="https://www.instagram.com/skanhous" class="icon ion-social-instagram"></a>
+        <a href="https://www.facebook.com/skanhous" class="icon ion-social-facebook"></a>
+      </div>
+
+      <!-- Spacer -->
+      <div class="navbar-spacer pull-right visible-lg"></div>
+
+      <!-- Navigation -->
+      <nav class="nav navigation visible-lg">
+        <ul>
+          <li>
+            <a  href="#main">Home</a>
+          </li>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#clients">Clientes</a>
+          </li>
+          <li>
+            <a href="#team">Missão</a>
+          </li>
+          <li>
+            <a href="#contacts">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
+    
+    <!-- Main Jumbotron -->
+    <main id="main" class="jumbotron">
+
+      <!-- Start revolution slider -->
+      <div class="rev_slider_wrapper">
+        <div id="rev_slider" class="rev_slider tp-overflow-hidden fullscreenbanner">
+          <ul>
+
+            <!-- Slide 1 -->
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+
+              <!-- Main image-->
+              <img src="images/slider/slide1.jpg" data-bgparallax="5"  alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">Skan Hous 1.0<br> Modulos em Aço<br> Alessandra Pretti
+              </div>
+
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Steelframe
+              </div>
+
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600;">
+                  <a href="#project1" class="popup-with-zoom-anim link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+
+              <!-- Main image-->
+              <img src="images/slider/slide2.jpg"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">A sofisticação da<br> Madeira Engenheirada<br> FPoles
+              </div>
+
+
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Woodframe
+              </div>
+
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600;">
+                  <a href="#project2" class="popup-with-zoom-anim link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+
+            <!-- Slide 3 -->
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+
+              <!-- Main image-->
+              <img src="images/slider/slide3.jpg"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+
+                style="background-color:#ffce04;"> </div>
+
+
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#ffce04;"> </div>
+
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">Skan Hous 2.0<br>Praticidade, Velocidade e <br>Qualidade
+              </div>
+
+
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Residencial
+              </div>
+
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; ">
+                  <a href="#project3" class="popup-with-zoom-anim link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <div class="content">   
+
+      <!-- Section About -->
+      <section id="about" class="section section-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <strong class="section-subtitle">sobre</strong>
+              <h2 class="section-title section-about-title">Somos uma Incorporadora de Projetos Modulares Residenciais </h2>
+              <p>A Skan Hous possui uma equipe multidisciplinar, composta por engenheiros, arquitetos, desenhistas, programadores, contadores e especialistas em desenvolvimento imobiliário.</p>
+
+                <p>Analisamos as melhores oportunidades do mercado através de estudos de viabilidade para auxiliar nossos clientes na escolha certa de uma propriedade.</p>
+                
+                  <p>Desde o loteamento até a construção de casas modulares de alto padrão, desenvolvemos projetos completos pensando em um espaço acolhedor e seguro, fruto de projetos tecnológicos criados por especialistas em desenvolvimentos imobiliários.</p>
+                
+                    <p>Seja bem-vindo à Skan Hous.</p>
+              <div class="experience-box">
+                <div class="experience-border"></div>
+                <div class="experience-content">
+                  <div class="experience-number">7</div>
+                  <div class="experience-info">Meses<br>Tempo de Entrega<br>Skan Hous</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class="dots-image">
+                <img alt="" class="about-img img-responsive" src="images/1-470x660.jpg">
+                <div class="dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section bg-dots">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="section-info">
+                <div class="title-hr wow fadeInLeft"></div>
+                <div class="info-title">O que fazemos</div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row-services row">
+                <div class="col-service col-sm-6 col-lg-4 wow fadeInUp">
+                  <span class="text-dark icon icon-apartment"></span>
+                  <h4>Idealizamos</h4>
+                  <p>O primeiro passo é criar Projetos Modulares dentro dos pilares ESG (Environment, Social e Governance) aliado a projetos arquitônicos comtemporânos desenvolvidos em tecnologia BIM.</p>
+                </div>
+                <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                  <span class="text-dark icon icon-pencil-ruler"></span>
+                  <h4>Planejamos</h4>
+                  <p>Uma vez pronto, planejamos a execução de cada unidade para melhor atender a situação de cada cliente sempre pensando em otimizar tempo e custo da obra.</p>
+                </div>
+                <div class="clearfix visible-sm visible-md"></div>
+                <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+                  <span class="text-dark icon icon-truck"></span>
+                  <h4>Executamos</h4>
+                  <p>Com os nossos contrutorers parceiros realizamos o projeto do começo até a entrega das chaves.Tranquilidade, qualidade e previsibilidade na execução dos projetos Skan Hous.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- Section Projects -->
+      <section id="projects" class="section-projects section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+               <h2 class="section-title">Projetos</h2>
+            </div>        
+          </div>
+        </div>
+        <div class="project-carousel owl-carousel">
+
+          <!-- Project Carousel Item 1 -->
+          <a href="#project1" class="project-item item-shadow popup-with-zoom-anim building">
+            <img alt="" class="img-responsive" src="images/projects/1-426x574.jpg">
+            <div class="project-hover">
+              <div class="project-hover-content">
+                <h3 class="project-title">Skan Hous 1.0<br>Projeto Itu<br>Cercado por Natureza</h3>
+                <p class="project-description">A Skan Hous Itu é o nosso modelo 1.0. Este projeto possui 350 m2 de alto padrão localizada em Itu no interior de São Paulo, foi constuida em um lote de 20.000 m2 cercada por uma natureza abundante. </p>
+              </div>
+            </div>
+            <span class="link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-right"></i></span>
+          </a>
+          
+          <!-- Project Carousel Item 2 -->
+          <a href="#project2" class="project-item item-shadow popup-with-zoom-anim building">
+            <img alt="" class="img-responsive" src="images/projects/2-426x574.jpg">
+            <div class="project-hover">
+              <div class="project-hover-content">
+                <h3 class="project-title">Skan Hous <br>Woodframe<br>by FPoles Arquitetos</h3>
+                <p class="project-description">Criada pelo conceituado escritório FPoles e sua equipe com Madeira Engenheirada.</p>
+              </div>
+            </div>
+            <span class="link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-right"></i></span>
+          </a>
+          
+          <!-- Project Carousel Item 3 -->
+          <a href="#project3" class="project-item item-shadow popup-with-zoom-anim building">
+            <img alt="" class="img-responsive" src="images/projects/3-426x574.jpg">
+            <div class="project-hover">
+              <div class="project-hover-content">
+                <h3 class="project-title">Skan Hous 2.0 <br>Aço e Vidro <br>by Alessandra Pretti</h3>
+                <p class="project-description">Após o sucesso da versão 1.0, o escritório Elevare da arquiteta Alessandra Pretti desenvolveu a versão 2.0. Os espaços foram otimizados e o Módulo Quartos ganhou espaços para deixar a família e seus convidados a vontade. </p>
+              </div>
+            </div>
+            <span class="link-arrow">Veja o Projeto <i class="icon ion-ios-arrow-right"></i></span>
+          </a>
+        </div>
+
+<!-- Project Modal Dialog 1 -->
+<div id="project1" class="container zoom-anim-dialog mfp-hide">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Main Image Display with Navigation Arrows -->
+      <div class="main-image-container position-relative">
+        <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
+        <img id="mainImage" src="images/projects/1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
+      </div>
+      <!-- Thumbnails Carousel -->
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
+        <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
+        <div class="thumbnail-container d-flex overflow-hidden">
+          <img onclick="changeImage('images/projects/1-960x540.jpg')" src="images/projects/1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeImage('images/projects/2-960x540.jpg')" src="images/projects/2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeImage('images/projects/3-960x540.jpg')" src="images/projects/3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeImage('images/projects/4-960x540.jpg')" src="images/projects/4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+          <img onclick="changeImage('images/projects/5-960x540.jpg')" src="images/projects/5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
+          <img onclick="changeImage('images/projects/6-960x540.jpg')" src="images/projects/6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
+          <img onclick="changeImage('images/projects/7-960x540.jpg')" src="images/projects/7-960x540.jpg" class="img-thumbnail" alt="Thumbnail 7">
+          <img onclick="changeImage('images/projects/8-960x540.jpg')" src="images/projects/8-960x540.jpg" class="img-thumbnail" alt="Thumbnail 8">
+          <img onclick="changeImage('images/projects/9-960x540.jpg')" src="images/projects/9-960x540.jpg" class="img-thumbnail" alt="Thumbnail 9">
+          <img onclick="changeImage('images/projects/10-960x540.jpg')" src="images/projects/10-960x540.jpg" class="img-thumbnail" alt="Thumbnail 10">
+          <img onclick="changeImage('images/projects/11-960x540.jpg')" src="images/projects/11-960x540.jpg" class="img-thumbnail" alt="Thumbnail 11">
+          <img onclick="changeImage('images/projects/12-960x540.jpg')" src="images/projects/12-960x540.jpg" class="img-thumbnail" alt="Thumbnail 12">
+          <img onclick="changeImage('images/projects/13-960x540.jpg')" src="images/projects/13-960x540.jpg" class="img-thumbnail" alt="Thumbnail 13">
+          <img onclick="changeImage('images/projects/14-960x540.jpg')" src="images/projects/14-960x540.jpg" class="img-thumbnail" alt="Thumbnail 14">
+          <img onclick="changeImage('images/projects/15-960x540.jpg')" src="images/projects/15-960x540.jpg" class="img-thumbnail" alt="Thumbnail 15">
+          <img onclick="changeImage('images/projects/16-960x540.jpg')" src="images/projects/16-960x540.jpg" class="img-thumbnail" alt="Thumbnail 16">
+          <img onclick="changeImage('images/projects/17-960x540.jpg')" src="images/projects/17-960x540.jpg" class="img-thumbnail" alt="Thumbnail 17">
+          <img onclick="changeImage('images/projects/18-960x540.jpg')" src="images/projects/18-960x540.jpg" class="img-thumbnail" alt="Thumbnail 18">
+          <img onclick="changeImage('images/projects/19-960x540.jpg')" src="images/projects/19-960x540.jpg" class="img-thumbnail" alt="Thumbnail 19">
+          <img onclick="changeImage('images/projects/20-960x540.jpg')" src="images/projects/20-960x540.jpg" class="img-thumbnail" alt="Thumbnail 20">
+          <img onclick="changeImage('images/projects/21-960x540.jpg')" src="images/projects/21-960x540.jpg" class="img-thumbnail" alt="Thumbnail 21">
+          <img onclick="changeImage('images/projects/22-960x540.jpg')" src="images/projects/22-960x540.jpg" class="img-thumbnail" alt="Thumbnail 22">
+          <img onclick="changeImage('images/projects/23-960x540.jpg')" src="images/projects/23-960x540.jpg" class="img-thumbnail" alt="Thumbnail 23">
+          <img onclick="changeImage('images/projects/24-960x540.jpg')" src="images/projects/24-960x540.jpg" class="img-thumbnail" alt="Thumbnail 24">
+          <img onclick="changeImage('images/projects/25-960x540.jpg')" src="images/projects/25-960x540.jpg" class="img-thumbnail" alt="Thumbnail 25">
+          <img onclick="changeImage('images/projects/26-960x540.jpg')" src="images/projects/26-960x540.jpg" class="img-thumbnail" alt="Thumbnail 26">
+          <img onclick="changeImage('images/projects/27-960x540.jpg')" src="images/projects/27-960x540.jpg" class="img-thumbnail" alt="Thumbnail 27">
+          <img onclick="changeImage('images/projects/28-960x540.jpg')" src="images/projects/28-960x540.jpg" class="img-thumbnail" alt="Thumbnail 28">
+          <img onclick="changeImage('images/projects/29-960x540.jpg')" src="images/projects/29-960x540.jpg" class="img-thumbnail" alt="Thumbnail 29">
+          <img onclick="changeImage('images/projects/30-960x540.jpg')" src="images/projects/30-960x540.jpg" class="img-thumbnail" alt="Thumbnail 30">
+          <img onclick="changeImage('images/projects/31-960x540.jpg')" src="images/projects/31-960x540.jpg" class="img-thumbnail" alt="Thumbnail 31">
+          <img onclick="changeImage('images/projects/32-960x540.jpg')" src="images/projects/32-960x540.jpg" class="img-thumbnail" alt="Thumbnail 32">  
+        </div>
+        <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h3 class="project-detail-title">Skan Hous 1.0 - Pinheirinho Itu</h3>
+      <p class="project-detail-text">Construída em um terreno de 20.000 m² cercada por uma natureza exuberante, este projeto modular da Arquiteta Alessandra Pretti de 350 m² foi erguido em menos de 7 meses.</p>
+      <ul class="project-detail-list text-dark">
+        <li><span class="left">Clientes:</span><span class="right">Pedro e Bianca</span></li>
+        <li><span class="left">Entrega:</span><span class="right">Setembro 2023</span></li>
+        <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular</span></li>
+        <li><span class="left">Arquiteta:</span><span class="right">Alessandra Pretti</span></li>
+      </ul>
+      <div class="project-detail-meta">
+        <span class="left text-dark hidden-xs pull-sm-left">Compartilhar:</span>
+        <div class="social-list pull-sm-right">
+          <a href="#" class="icon ion-social-instagram"></a>
+          <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-linkedin"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS for Responsiveness and Styling -->
+<style>
+  .main-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .main-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .main-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+  }
+
+  .main-carousel-arrow.prev {
+    left: 10px;
+  }
+
+  .main-carousel-arrow.next {
+    right: 10px;
+  }
+
+  .main-carousel-arrow:hover {
+    color: #FFCE04;
+  }
+
+  .thumbnail-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: hidden;
+    width: 80%;
+  }
+
+  .thumbnail-container .img-thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .thumbnail-container .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnail-container .img-thumbnail.selected {
+    border: 3px solid #FFCE04; /* Destaque do thumbnail selecionado */
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #FFCE04;
+  }
+</style>
+
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
+<script>
+  const mainImageElement = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
+  const thumbnailContainer = document.querySelector('.thumbnail-container');
+
+  // Array completo de todas as imagens principais
+  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
+  let mainImageIndex = 0;
+
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
+  function changeMainImage(src, element) {
+    mainImageElement.src = src;
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    element.classList.add('selected');
+    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
+    scrollToThumbnail(element); // Rola para o thumbnail ativo
+  }
+
+  // Funções para setas de navegação da imagem principal
+  function prevMainImage() {
+    mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  function nextMainImage() {
+    mainImageIndex = (mainImageIndex + 1) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  // Destaque do thumbnail correspondente à imagem principal
+  function highlightThumbnail(src) {
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
+    if (thumbnail) thumbnail.classList.add('selected');
+  }
+
+  // Função para deslizar os thumbnails horizontalmente
+  function slideThumbnails(direction) {
+    const scrollAmount = 120; // Controla o movimento de scroll
+    thumbnailContainer.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  // Função para centralizar o thumbnail ativo na visualização do carrossel
+  function scrollToThumbnail(element) {
+    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
+    thumbnailContainer.scrollBy({
+      left: offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
+</script>
+
+
+<!-- Project Modal Dialog 2 -->
+<div id="project2" class="container zoom-anim-dialog mfp-hide">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Main Image Display with Navigation Arrows -->
+      <div class="main-image-container position-relative">
+        <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
+        <img id="mainImage" src="images/projects/2.1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
+      </div>
+      <!-- Thumbnails Carousel -->
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
+        <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
+        <div class="thumbnail-container d-flex overflow-hidden">
+          <img onclick="changeMainImage('images/projects/2.1-960x540.jpg', this)" src="images/projects/2.1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeMainImage('images/projects/2.2-960x540.jpg', this)" src="images/projects/2.2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeMainImage('images/projects/2.3-960x540.jpg', this)" src="images/projects/2.3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeMainImage('images/projects/2.4-960x540.jpg', this)" src="images/projects/2.4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+          <img onclick="changeMainImage('images/projects/2.5-960x540.jpg', this)" src="images/projects/2.5-960x540.jpg" class="img-thumbnail" alt="Thumbnail 5">
+          <img onclick="changeMainImage('images/projects/2.6-960x540.jpg', this)" src="images/projects/2.6-960x540.jpg" class="img-thumbnail" alt="Thumbnail 6">
+        </div>
+        <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h3 class="project-detail-title">Skan Hous by FPoles</h3>
+      <p class="project-detail-text">Projetada pelo arquiteto Fernando Poles e sua equipe, este projeto Modular de Alto Padrão representa um marco na construção com madeira engenheirada no Brasil. Sustentável e elegante, este projeto permite a construção de casas que vão de 500 a 1.500 metros quadrados.</p>
+      <ul class="project-detail-list text-dark">
+        <li><span class="left">Cliente:</span><span class="right">Skan Hous</span></li>
+        <li><span class="left">Entrega:</span><span class="right">Fevereiro 2025</span></li>
+        <li><span class="left">Tipo de Projeto:</span><span class="right">Modular MLC Alto Padrão</span></li>
+        <li><span class="left">Arquiteto:</span><span class="right">FPoles Arquitetos</span></li>
+      </ul>
+      <div class="project-detail-meta">
+        <span class="left text-dark hidden-xs pull-sm-left">Compartilhar:</span>
+        <div class="social-list pull-sm-right">
+          <a href="#" class="icon ion-social-instagram"></a>
+          <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-linkedin"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS for Responsiveness and Styling -->
+<style>
+  .main-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .main-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .main-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+  }
+
+  .main-carousel-arrow.prev {
+    left: 10px;
+  }
+
+  .main-carousel-arrow.next {
+    right: 10px;
+  }
+
+  .main-carousel-arrow:hover {
+    color: #FFCE04;
+  }
+
+  .thumbnail-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: hidden;
+    width: 80%;
+  }
+
+  .thumbnail-container .img-thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .thumbnail-container .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnail-container .img-thumbnail.selected {
+    border: 3px solid #FFCE04; /* Destaque do thumbnail selecionado */
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #FFCE04;
+  }
+</style>
+
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
+<script>
+  const mainImageElement = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
+  const thumbnailContainer = document.querySelector('.thumbnail-container');
+
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
+  function changeMainImage(src, element) {
+    mainImageElement.src = src;
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    element.classList.add('selected');
+  }
+
+  // Funções para setas de navegação da imagem principal
+  let mainImageIndex = 0;
+  const mainImages = [
+    'images/projects/2.1-960x540.jpg',
+    'images/projects/2.2-960x540.jpg',
+    'images/projects/2.3-960x540.jpg',
+    'images/projects/2.4-960x540.jpg',
+    'images/projects/2.5-960x540.jpg',
+    'images/projects/2.6-960x540.jpg'
+  ];
+
+  // Função para navegar entre as imagens principais
+  function prevMainImage() {
+    mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    updateThumbnailSelection();
+  }
+
+  function nextMainImage() {
+    mainImageIndex = (mainImageIndex + 1) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    updateThumbnailSelection();
+  }
+
+  function updateThumbnailSelection() {
+    thumbnails.forEach((thumb, index) => {
+      if (mainImages[mainImageIndex] === thumb.src) {
+        thumb.classList.add('selected');
+      } else {
+        thumb.classList.remove('selected');
+      }
+    });
+  }
+
+  // Função para deslizar os thumbnails horizontalmente
+  function slideThumbnails(direction) {
+    const scrollAmount = 120; // Controla o movimento de scroll
+    thumbnailContainer.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
+
+  // Destaca o primeiro thumbnail por padrão
+  updateThumbnailSelection();
+</script>
+
+
+<!-- Project Modal Dialog 3 -->
+<div id="project3" class="container zoom-anim-dialog mfp-hide">
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Main Image Display with Navigation Arrows -->
+      <div class="main-image-container position-relative">
+        <button class="carousel-arrow main-carousel-arrow prev" onclick="prevMainImage()">❮</button>
+        <img id="mainImage" src="images/projects/3.1-960x540.jpg" alt="Project Image" class="img-fluid">
+        <button class="carousel-arrow main-carousel-arrow next" onclick="nextMainImage()">❯</button>
+      </div>
+      <!-- Thumbnails Carousel -->
+      <div class="thumbnail-carousel d-flex align-items-center justify-content-center mt-4">
+        <button class="carousel-arrow" onclick="slideThumbnails('left')">❮</button>
+        <div class="thumbnail-container d-flex overflow-hidden">
+          <img onclick="changeImage('images/projects/3.1-960x540.jpg')" src="images/projects/3.1-960x540.jpg" class="img-thumbnail" alt="Thumbnail 1">
+          <img onclick="changeImage('images/projects/3.2-960x540.jpg')" src="images/projects/3.2-960x540.jpg" class="img-thumbnail" alt="Thumbnail 2">
+          <img onclick="changeImage('images/projects/3.3-960x540.jpg')" src="images/projects/3.3-960x540.jpg" class="img-thumbnail" alt="Thumbnail 3">
+          <img onclick="changeImage('images/projects/3.4-960x540.jpg')" src="images/projects/3.4-960x540.jpg" class="img-thumbnail" alt="Thumbnail 4">
+        </div>
+        <button class="carousel-arrow" onclick="slideThumbnails('right')">❯</button>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h3 class="project-detail-title">Skan Hous V.2 - 2025</h3>
+      <p class="project-detail-text">A V.2 representa uma grande evolução em comparação com a primeira versão da Skan Hous. Mais moderna e espaçosa a V.2 traz avanços importantes tanto no design quanto na engenharia dos módulos.</p>
+      <ul class="project-detail-list text-dark">
+        <li><span class="left">Cliente:</span><span class="right">Skan Hous</span></li>
+        <li><span class="left">Entrega:</span><span class="right">Fevereiro de 2025</span></li>
+        <li><span class="left">Tipo de Projeto:</span><span class="right">Residência Modular</span></li>
+        <li><span class="left">Arquiteta:</span><span class="right">Alessandra Pretti</span></li>
+      </ul>
+      <div class="project-detail-meta">
+        <span class="left text-dark hidden-xs pull-sm-left">Compartilhar:</span>
+        <div class="social-list pull-sm-right">
+          <a href="#" class="icon ion-social-twitter"></a>
+          <a href="#" class="icon ion-social-instagram"></a>
+          <a href="#" class="icon ion-social-facebook"></a>
+          <a href="#" class="icon ion-social-linkedin"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS for Responsiveness and Styling -->
+<style>
+  .main-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .main-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .main-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 10;
+  }
+
+  .main-carousel-arrow.prev {
+    left: 10px;
+  }
+
+  .main-carousel-arrow.next {
+    right: 10px;
+  }
+
+  .main-carousel-arrow:hover {
+    color: #FFCE04;
+  }
+
+  .thumbnail-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: hidden;
+    width: 80%;
+  }
+
+  .thumbnail-container .img-thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .thumbnail-container .img-thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  .thumbnail-container .img-thumbnail.selected {
+    border: 3px solid #FFCE04; /* Destaque do thumbnail selecionado */
+  }
+
+  .carousel-arrow {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .carousel-arrow:hover {
+    color: #FFCE04;
+  }
+</style>
+
+<!-- JavaScript ajustado para rolar o carrossel de thumbnails -->
+<script>
+  const mainImageElement = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumbnail-container .img-thumbnail');
+  const thumbnailContainer = document.querySelector('.thumbnail-container');
+
+  // Array completo de todas as imagens principais
+  const mainImages = Array.from(thumbnails).map(thumbnail => thumbnail.src);
+  let mainImageIndex = 0;
+
+  // Função para alterar a imagem principal e rolar até o thumbnail correspondente
+  function changeMainImage(src, element) {
+    mainImageElement.src = src;
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    element.classList.add('selected');
+    mainImageIndex = mainImages.indexOf(src); // Atualiza o índice principal
+    scrollToThumbnail(element); // Rola para o thumbnail ativo
+  }
+
+  // Funções para setas de navegação da imagem principal
+  function prevMainImage() {
+    mainImageIndex = (mainImageIndex - 1 + mainImages.length) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  function nextMainImage() {
+    mainImageIndex = (mainImageIndex + 1) % mainImages.length;
+    mainImageElement.src = mainImages[mainImageIndex];
+    const selectedThumbnail = thumbnails[mainImageIndex];
+    highlightThumbnail(mainImages[mainImageIndex]);
+    scrollToThumbnail(selectedThumbnail); // Rola para o thumbnail ativo
+  }
+
+  // Destaque do thumbnail correspondente à imagem principal
+  function highlightThumbnail(src) {
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    const thumbnail = Array.from(thumbnails).find(thumb => thumb.src === src);
+    if (thumbnail) thumbnail.classList.add('selected');
+  }
+
+  // Função para deslizar os thumbnails horizontalmente
+  function slideThumbnails(direction) {
+    const scrollAmount = 120; // Controla o movimento de scroll
+    thumbnailContainer.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  // Função para centralizar o thumbnail ativo na visualização do carrossel
+  function scrollToThumbnail(element) {
+    const thumbnailContainerRect = thumbnailContainer.getBoundingClientRect();
+    const elementRect = element.getBoundingClientRect();
+    const offset = elementRect.left - thumbnailContainerRect.left - (thumbnailContainerRect.width / 2) + (elementRect.width / 2);
+    thumbnailContainer.scrollBy({
+      left: offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // Adiciona evento de clique em cada thumbnail para atualização da imagem principal
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => changeMainImage(thumb.src, thumb));
+  });
+</script>
+
+      </section>
+
+      <!-- Section Clients -->
+      <section id="clients" class="section-clients section bg-dots">
+        <div class="container">
+          <h2 class="section-title">Parceiros</h2>
+          <div class="client-carousel owl-carousel">
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="images/clients/1-92x92.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                <div class="client-title">
+                  <span class="client-name">Alessandra Pretti</span> 
+                  <span class="client-company">/ Studio Elevare</span>
+                </div>
+                <p class="client-description">Participar do desenvolvimento do projeto de casas modulares foi um marco na minha trajetória. Idealizamos um sistema construtivo adaptável a diferentes tipos de terrenos, promovendo integração com o meio ambiente e respeitando as características naturais de cada local. O foco em uma construção ecologicamente correta, com processos limpos e eficientes, garantiu um resultado que combina funcionalidade, beleza e sustentabilidade, atendendo às demandas de quem busca inovação e qualidade.</p>
+              </div>
+            </div>
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="images/clients/2-92x92.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                <div class="client-title">
+                  <span class="client-name">Andre Pinheiro </span> 
+                  <span class="client-company">/ Zanollin Engenharia</span>
+                </div>
+                <p class="client-description">Desenvolver o projeto de casas modulares foi um desafio que trouxe enorme satisfação para a equipe da ZANOLLIN. Adaptar a experiência acumulada ao longo dos anos na área industrial para um contexto mais sutil e integrado com todas as disciplinas foi uma jornada enriquecedora. O resultado final foi uma estrutura que harmoniza perfeitamente com a arquitetura: apesar da robustez típica de estruturas industriais, alcançamos linhas suaves e elegantes, criando uma integração arquitetônica marcante e funcional.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<div class="experience-box">
+  <div class="experience-border"></div>
+  <div class="experience-content">
+    <div class="experience-number">3</div>
+    <div class="experience-info">Valores<br>Visão<br>Missão</div>
+  </div>
+</div>
+
+<!-- Section Valores -->
+<section id="team" class="section section-about">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="section-info">
+        <div class="title-hr wow fadeInLeft"></div>
+        <div class="info-title">Valores</div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row-services row">
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp">
+          <h4>Qualidade</h4>
+          <p>Nossas práticas e processos de projeto e construção são aprimorados para fornecer os resultados da mais alta qualidade para nossos clientes, uma casa durável, bem projetada e construída de maneira sistêmica.</p>
+        </div>
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <h4>Eternos Clientes</h4>
+          <p>Construímos mais do que casas, construímos confiança. Acreditamos que, quando entregamos as casas da mais alta qualidade, criamos um relacionamento para toda a vida.</p>
+        </div>
+        <div class="clearfix visible-sm visible-md"></div>
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+          <h4>Regra de Ouro</h4>
+          <p>É um conceito simples mas poderoso: tratamos nossos clientes, fornecedores, parceiros e uns aos outros da maneira que queremos ser tratados - com empatia, respeito e integridade.</p>
+        </div>
+        <div class="clearfix visible-lg"></div> <!-- Clearfix adicionado para melhorar o alinhamento em telas maiores -->
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="1.2s">
+          <h4>Mãe Terra</h4>
+          <p>Sabemos que as construções têm um impacto profundo no meio ambiente e na saúde das pessoas. Como construtores de casas, sentimos a responsabilidade diária de construir e operar respeitando a mãe natureza da melhor maneira possível.</p>
+        </div>
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="1.6s">
+          <h4>Menos é Mais</h4>
+          <p>Uma casa construída em menos tempo, com uso de tecnologia e construção offsite, causa menor impacto ambiental além de aumentar a qualidade na entrega do imóvel.</p>
+        </div>
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="2.0s">
+          <h4>Segurança</h4>
+          <p>Somos intransigentes em nosso compromisso com a saúde e segurança dos nossos colaboradores, clientes e da comunidade em geral.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section Missão e Visão -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="section-info">
+        <div class="title-hr wow fadeInLeft"></div>
+        <div class="info-title">Missão e Visão</div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row-services row">
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp">
+          <h4>Nossa Missão</h4>
+          <p>Transformar a experiência de morar e trabalhar dos brasileiros através da construção modular ágil, saudável e de alta qualidade em um processo altamente escalável, com alto impacto positivo nas áreas sociais e ambientais em todo Brasil.</p>
+        </div>
+        <div class="col-service col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <h4>Nossa Visão</h4>
+          <p>Desenvolver comunidades vibrantes integradas com a natureza, resultado de um balanço de sucesso entre integração sócio-econômica, sustentável e CO2 positiva.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Section Contacts -->
+      <section id="contacts">
+
+        <div class="section bg-dots">
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-info">
+                    <div class="title-hr wow fadeInLeft"></div>
+                    <div class="info-title">Contato e Redes Sociais</div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="row-contact row">
+                    <div class="col-contact col-lg-6">
+                      <h3 class="contact-title contact-top">São Paulo, <span>Brasil</span></h3>
+                      <p class="contact-address text-muted"><strong>Al. Grajau, 219, Barueri - cep 06.454-050.</strong></p>
+<p class="contact-row">
+  <strong class="text-dark">Bio:</strong> 
+  <a href="https://bio.skanhous.com.br" style="color:black; text-decoration:none;" onmouseover="this.style.color='#ffc304';" onmouseout="this.style.color='black';">
+    bio.skanhous.com.br
+  </a>
+</p>
+
+<p class="contact-row">
+  <strong class="text-dark">Email:</strong> 
+  <a href="mailto:contato@skanhous.com.br" style="color:black; text-decoration:none;" onmouseover="this.style.color='#ffc304';" onmouseout="this.style.color='black';">
+    contato@skanhous.com.br
+  </a>
+</p>
+
+                    </div>
+                    <div class="col-contact col-lg-6">
+                      <p class="contact-top"><strong class="text-muted">WhatsApp:</strong></p>
+                      <p class="phone-lg text-dark">
+                        <a href="https://wa.me/5511991001961" class="text-dark" target="_blank">+55 (11) 99100-1961</a>
+                      </p>   
+                      <div class="text-muted"><strong class="text-dark">Nos siga nas Redes Sociais</strong><br>
+                        <div class="contact-social social-list">
+                          <a href="" class="icon ion-social-instagram"></a>
+                          <a href="" class="icon ion-social-linkedin"></a>
+                          <a href="" class="icon ion-social-link"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer section"> 
+      <div class="footer-flex">
+        <div class="flex-item">
+          <a class="brand pull-left" href="#">
+            <img alt="" src="images/brand.png">
+            <div class="brand-info">
+              <div class="brand-name">SKAN HOUS</div>
+              <div class="brand-text">Incorporadora</div>
+            </div>
+          </a>
+        </div>
+        <div class="flex-item">
+          <div class="social-list pull-sm-right">
+        <a href="https://www.linkedin.com/company/skan-hous/" class="icon ion-social-linkedin"></a>
+        <a href="https://www.instagram.com/skanhous" class="icon ion-social-instagram"></a>
+        <a href="https://www.facebook.com/skanhous" class="icon ion-social-facebook"></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <ul class="lang-list">
+            <li class="active"><a href="">PT</a></li>
+            <li><a href="">EN</a></li>
+            <li><a href="">ES</a></li>
+          </ul> 
+        </div>
+        <div class="flex-item">
+          <div class="inline-block pull-sm-right">© SKANHOUS 2024. Todos os Direitos Reservados.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyCwVuYiM-83l2IdjpT9uC0lg4jBm8-w4j8"></script> 
+  <script src="js/gmap.js"></script>
+
+  <!-- Slider revolution -->
+  <script src="js/rev-slider/jquery.themepunch.tools.min.js"></script>
+  <script src="js/rev-slider/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- Slider revolution 5x Extensions   -->
+  <script src="js/rev-slider/revolution.extension.actions.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.carousel.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.kenburn.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.layeranimation.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.migration.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.navigation.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.parallax.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.slideanims.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.video.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/rev-slider-init.js"></script>
+  <script src="js/scripts.js"></script> 
+</body>
+</html>
